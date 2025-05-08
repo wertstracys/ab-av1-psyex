@@ -375,7 +375,7 @@ async def thing():
             out = f"{_dir}/{file_name}"
             smt = time.time()
             mux_args = await another(mux_args, title, epi, sn, metadata_name, o_out)
-            ffmpeg = 'ffmpeg -i """{}""" ' f"{mux_args} -codec copy" ' """{}""" -y'
+            ffmpeg = 'ffmpeg -i """{}""" ' f"{mux_args}" ' """{}""" -y'
             _out = split_ext(out)[0] + " [Muxing]" + split_ext(out)[1]
             cmd = ffmpeg.format(o_out, _out)
             encode = encoder(_id, event=msg_t)
