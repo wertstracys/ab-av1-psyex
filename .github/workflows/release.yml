@@ -38,4 +38,4 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: encodev/svtav1enc:latest,encodev/svtav1enc:${{ steps.date.outputs.date }}
+          tags: encodev/svtav1enc:latest
