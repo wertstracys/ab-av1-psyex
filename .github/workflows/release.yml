@@ -16,6 +16,12 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
+        name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.12.1
+        with:
+          all_but_latest: true
+          access_token: ${{ secrets.GIT_TOKEN }}
+      -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       -
@@ -38,4 +44,4 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          tags: encodev/svtav1enc:latest
+          tags: encodev/svtav1enc:latest,encodev/svtav1enc:${{ steps.date.outputs.date }}
