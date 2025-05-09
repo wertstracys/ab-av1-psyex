@@ -33,7 +33,7 @@ class Config:
             self.BOT_TOKEN = config("BOT_TOKEN")
             self.CACHE_DL = config("CACHE_DL", default=True, cast=bool)
             self.CAP_DECO = config("CAP_DECO", default="🏖️")
-            self.C_LINK = config("C_LINK", default="@Ani_Mirror_D")
+            self.C_LINK = config("C_LINK", default="@QVA_FLiX")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.COMP_MODE = config("COMPATIBILITY_MODE", default=True, cast=bool)
             self.CUSTOM_RENAME = config("CUSTOM_RENAME", default=None)
@@ -92,7 +92,9 @@ class Config:
             self.TELEGRAPH_API = config(
                 "TELEGRAPH_API", default="https://api.telegra.ph"
             )
-            self.TELEGRAPH_AUTHOR = config("TELEGRAPH_AUTHOR", default=None)
+            self.TELEGRAPH_AUTHOR = config(
+                "TELEGRAPH_AUTHOR", default="QVA-FLiX|https://t.me/SamXD7"
+            )
             self.TEMP_USER = config("TEMP_USERS", default=str())
             self.TG_DL_CLIENT = config("TG_DL_CLIENT", default="pyrogram")
             self.TG_UL_CLIENT = config("TG_UL_CLIENT", default="pyrogram")
