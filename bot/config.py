@@ -32,8 +32,8 @@ class Config:
             self.ARIA2_PORT = config("ARIA2_PORT", default=6800, cast=int)
             self.BOT_TOKEN = config("BOT_TOKEN")
             self.CACHE_DL = config("CACHE_DL", default=True, cast=bool)
-            self.CAP_DECO = config("CAP_DECO", default="◉")
-            self.C_LINK = config("C_LINK", default="@ANi_MiNE")
+            self.CAP_DECO = config("CAP_DECO", default="🏖️")
+            self.C_LINK = config("C_LINK", default="@Ani_Mirror_D")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.COMP_MODE = config("COMPATIBILITY_MODE", default=True, cast=bool)
             self.CUSTOM_RENAME = config("CUSTOM_RENAME", default=None)
@@ -69,7 +69,7 @@ class Config:
             self.LOGS_IN_CHANNEL = config("LOGS_IN_CHANNEL", default=False, cast=bool)
             self.MI_CAP = config("MI_IN_CAPTION", default=True, cast=bool)
             self.MUX_ARGS = config(
-                "MUX_ARGS", default="-map 0 -c:v copy -c:a libopus -b:a 64k -ac 2"
+                "MUX_ARGS", default="-c:v copy -c:a libopus -b:a 64k -ac 2"
             )
             self.NO_BANNER = config("NO_BANNER", default=False, cast=bool)
             self.NO_TEMP_PM = config("NO_TEMP_PM", default=False, cast=bool)
