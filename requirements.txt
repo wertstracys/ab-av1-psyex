@@ -7,7 +7,7 @@ country_converter
 dnspython>=2.6.0rc1
 emoji-country-flag
 feedparser
-html_telegraph_poster
+html-telegraph-poster
 humanize
 lxml[html_clean]
 psutil
