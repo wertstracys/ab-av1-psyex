@@ -377,7 +377,7 @@ async def thing():
             mux_args = await another(mux_args, title, epi, sn, metadata_name, o_out)
             ffmpeg = (
                 'ffmpeg -i """{}""" '
-                f"-map 0:v? -map 0:a? -map 0:s? -map 0:t? {mux_args}"
+                f"{mux_args} -map 0:v? -map 0:a? -map 0:s? -map 0:t?"
                 ' """{}""" -y'
             )
             _out = split_ext(out)[0] + " [Muxing]" + split_ext(out)[1]
