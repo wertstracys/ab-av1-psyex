@@ -52,7 +52,7 @@ class Config:
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
-                default='ab-av1 auto-encode -i "{}" -e libsvtav1 --svt tile-rows=0:tile-columns=0:tune=2:psy-rd=1.0:spy-rd=0 --keyint 300 --preset 8 --vfilter scale=1280:-2:flags=bicubic:param0=0:param1=1/2 --max-crf 70 --min-vmaf 87 -o "{}"',
+                default='ab-av1 auto-encode -i "{}" -e libsvtav1 --svt tile-rows=0:tile-columns=0:tune=2:chroma-qm-min=8:variance-boost-strength=2:sharpness=1:qp-scale-compress-strength=1:noise-norm-strength=1:psy-rd=0.5:spy-rd=0:sharp-tx=1 --keyint 321 --preset 9 --vfilter scale=1280:-2:flags=bicubic:param0=0:param1=1/2 --max-crf 70 --min-vmaf 84 -o "{}"',
             )
             self.FFMPEG2 = config("FFMPEG2", default=None)
             self.FFMPEG3 = config("FFMPEG3", default=None)
@@ -69,7 +69,7 @@ class Config:
             self.LOGS_IN_CHANNEL = config("LOGS_IN_CHANNEL", default=False, cast=bool)
             self.MI_CAP = config("MI_IN_CAPTION", default=True, cast=bool)
             self.MUX_ARGS = config(
-                "MUX_ARGS", default="-c:v copy -c:a libopus -b:a 64k -ac 2"
+                "MUX_ARGS", default="-c:v copy -c:a libopus -b:a 48k -ac 2"
             )
             self.NO_BANNER = config("NO_BANNER", default=False, cast=bool)
             self.NO_TEMP_PM = config("NO_TEMP_PM", default=False, cast=bool)
