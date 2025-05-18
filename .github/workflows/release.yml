@@ -44,6 +44,6 @@ jobs:
           context: .
           platforms: linux/amd64
           push: true
-          # tags: encodev/svtav1enc:latest
-          tags: encodev/svtav1enc:psy
+          tags: encodev/svtav1enc:latest
+          # tags: encodev/svtav1enc:psy
           # tags: encodev/svtav1enc:hdr
