@@ -680,9 +680,7 @@ async def get_codec(file="ffmpeg.txt"):
             "1080": "1080p",
             "x264": "AVC",
             "x265": "HEVC",
-            "libsvtav1": "AV1",
-            "libaom-av1": "AV1",
-            "librav1e": "AV1",
+            "svt": "AV1",
         }
     )
     for key, value in s_check.items():
